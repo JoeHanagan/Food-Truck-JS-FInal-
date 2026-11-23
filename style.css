@@ -1,0 +1,28 @@
+/*
+---Color Guide---
+logo grey = #7d7d7d
+logo red = #6b1212
+
+website bg = #252525
+*/
+
+html{
+    background-color: #252525;
+}
+
+#page-wrapper{
+    width: 1000px;
+    background-color: #7d7d7d;
+    margin: auto;
+}
+
+#banner{
+    display: flex;
+    gap: 30px;
+    height: 100px;
+}
+
+#banner-text{
+    margin-top: 15px;
+}
+
