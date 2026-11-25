@@ -3,11 +3,14 @@
 logo grey = #7d7d7d
 logo red = #6b1212
 
-website bg = #252525
+website bg = #393939 to #252525
 */
 
-html{
-    background-color: #252525;
+html {
+    background-image: linear-gradient(to right, #393939 0%, #252525 20%, #252525 80%, #393939 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+    font-family: 'Allerta Stencil';
 }
 
 #page-wrapper{
@@ -18,11 +21,61 @@ html{
 
 #banner{
     display: flex;
+    align-items: center;
     gap: 30px;
-    height: 100px;
+    max-height: 100px;
 }
 
 #banner-text{
-    margin-top: 15px;
+    margin-top: 0;
 }
 
+
+
+.hero{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0)), url('img/pizza-hero.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 563px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-top: 20px solid black;
+    border-bottom: 20px solid black;
+
+    h2 {
+        color: white;
+        
+        text-align: center;
+        font-size: 5em;
+        padding: 20px 30px;
+    }
+
+    a{
+        color: #252525;
+        background-color: white;
+        border: 5px solid #252525;
+        border-bottom-width: 9px;
+        border-left-width: 9px;
+        border-radius: 30px;
+        text-decoration: none;
+        padding: 10px 20px;
+        font-size: 1.2em;
+    }
+    a:hover{
+        color: #252525;
+        background-color: white;
+        border: 7px solid #252525;
+        border-radius: 30px;
+        text-decoration: none;
+        padding: 10px 20px;
+        font-size: 1.2em;
+    }
+}
+
+#overview{
+    text-align: center;
+    color: #252525;
+}
